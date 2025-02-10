@@ -1,7 +1,7 @@
 #!/bin/sh
 
-set -e
 
+
+python manage.py makemigrations
 python manage.py migrate
-
-uwsgi --socket :9000 --workers 4 --master --enable-threads --module app.wsgi
+python manage.py runserver 0.0.0.0:8000
