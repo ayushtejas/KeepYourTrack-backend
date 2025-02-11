@@ -9,7 +9,7 @@ urlpatterns = [
         'post': 'create'
     }), name='timer-list'),
 
-    path('timer/<int:pk>/', views.TimerViewSet.as_view({
+    path('timer/<uuid:pk>/', views.TimerViewSet.as_view({
         'get': 'retrieve',
         'put': 'update',
         'patch': 'partial_update',
@@ -21,7 +21,7 @@ urlpatterns = [
         'post': 'create'
     }), name='event-list'),
 
-    path('event/<int:pk>/', views.EventViewSet.as_view({
+    path('event/<uuid:pk>/', views.EventViewSet.as_view({
         'get': 'retrieve',
         'put': 'update',
         'patch': 'partial_update',
