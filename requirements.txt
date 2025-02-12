@@ -5,3 +5,4 @@ drf-spectacular>=0.15.1,<0.16
 djangorestframework-simplejwt
 django-cors-headers
 uwsgi>=2.0.19
+gunicorn
